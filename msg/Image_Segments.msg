@@ -12,5 +12,5 @@
   float32 range_min
   float32 range_max
   float32 scan_time
-  sensor_msgs/Image[] image_set
-  int32[] has_image
+  sensor_msgs/Image[] image_set  #Array of Segmented Images with size <= size of clusters[] 
+  int32[] has_image  #Array with size same as the size of clusters[]. has_image[i] is 1 if the corresponding cluster (cluster[i]) has an image stored in image_set, otherwise is 0.
